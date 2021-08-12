@@ -13,6 +13,19 @@ function App() {
             <div className="delete-todo">x</div>
 
             </div>
+
+            <div className="todos">
+                 <div className="todo">
+                     <div className="checkbox"></div>
+
+            <div className="text">Do homework</div>
+
+            <div className="delete-todo">x</div>
+
+            </div>
+
+
+
         </div>
     </div>
     );
