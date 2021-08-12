@@ -8,10 +8,15 @@ function App() {
 
     useEffect(() => {
         GetTodos();
+
+        console.log(todos);
     }, [])
 
     const GetTodos = () => {
-        fetch
+        fetch(api_base + "/todos")
+            .then(res => res.json())
+            .then(data => setTodos(data))
+            .catch(err => console.error("Error: ", err));
     }
 
 	return (
