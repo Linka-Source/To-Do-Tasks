@@ -26,6 +26,10 @@ app.post('/todo/new', (req, res) => {
     const todo = new Todo({
         text: req.body.text
     });
-})
+
+    todo.save();
+
+    res.json(todo);
+});
 
     app.listen(3001, () => console.log("Server started on port 3001"));
