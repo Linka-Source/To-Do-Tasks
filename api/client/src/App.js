@@ -14,8 +14,7 @@ function App() {
 
             </div>
 
-            <div className="todos">
-                 <div className="todo">
+                 <div className="todo-is-complete">
                      <div className="checkbox"></div>
 
             <div className="text">Do homework</div>
