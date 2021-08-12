@@ -1,6 +1,19 @@
 import { useEffect, useState } from 'react';
+const api_base = 'http://localhost:3001';
 
 function App() {
+    const [todos, setTodos] = useState([]);
+    const [popupActive, setPopupActive] = useState(false);
+    const [newTodo, seNewTodo] = useState("");
+
+    useEffect(() => {
+        GetTodos();
+    }, [])
+
+    const GetTodos = () => {
+        fetch
+    }
+
 	return (
         <div className="App">
             <h1>Welcome, PK</h1>
